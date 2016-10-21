@@ -1,1 +1,112 @@
-/* CSS declarations go here */
+html {
+    font-family: "Raleway", sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: sans-serif;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+ 
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: 100%;
+    background: white;
+
+}
+
+header {
+    color: #f2f2f2;
+    background: #3d5c5c;
+    padding: 20px 15px 15px 15px;
+    position: relative;
+
+}
+
+.search {
+    width: 200px;
+    padding:8px 15px;
+    background: #e0ebeb;
+    border:0px solid #dbdbdb;
+}
+
+.legende {
+    padding: 5px;
+    background-color: #f2f2f2;
+    border: 1px #d9d9d9 solid;
+    font-style: italic;
+}
+ 
+ button {
+    border-radius: 20px;
+    background-color: #3d5c5c; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.titre {
+    width: 100%;
+}
+
+.titre td {
+    width : 33%;
+    margin : auto;
+}
+
+
+h1 {
+    font-size: 1.5em;
+    margin: 0;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-right: 1em;
+}
+
+
+.posts ul {
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+.posts li {
+    position: relative;
+    list-style: none;
+    padding: 15px;
+    border-bottom: #eee solid 1px;
+}
+
+
+@media (max-width: 600px) {
+
+    li {
+        padding: 12px 15px;
+    }
+    .titre td {
+        padding-right: 0px;
+    }
+    .search {
+        width: 150px;
+        clear: both;
+    }
+}

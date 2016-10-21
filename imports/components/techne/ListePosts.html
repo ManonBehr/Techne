@@ -1,0 +1,18 @@
+
+
+
+
+ 
+<ul class="posts">
+
+  <li ng-repeat="post in $ctrl.posts">
+
+  	<img ng-src="{{post.url}}" alt="oeuvre"/>
+  	<p><span>{{post.author}}</span></p>
+    <p><span class="legende">{{post.text}}</span></p>
+    
+    <p><button>Commenter</button></p>
+
+  </li>
+
+</ul>

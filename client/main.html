@@ -1,25 +1,32 @@
 <head>
-  <title>techne</title>
+
+  <title>Techne</title>
+  <meta>
+  	<link rel="stylesheet" type="text/css" href="main.css">
+  	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  </meta>
+
 </head>
 
-<body>
-  <h1>Welcome to Meteor!</h1>
 
-  {{> hello}}
-  {{> info}}
+<body>
+	<header>
+		<table class="titre">
+			<tr>
+				<td><h1>Techne</h1></td>
+				<td><form onsubmit="console.log('enter !')">
+					<input type="text" class="search" placeholder="Rechercher un artiste..."></input>
+				</form></td>
+				<td>menu</td>
+			</tr>
+		</table>
+	</header>
+
+  <div class="container" ng-app="techne">
+
+    <liste-posts></liste-posts>
+
+  </div>
+
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
-</template>
-
-<template name="info">
-  <h2>Learn Meteor!</h2>
-  <ul>
-    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
-    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
-    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
-    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
-  </ul>
-</template>
